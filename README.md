@@ -1,1 +1,0 @@
-# biruji.org
