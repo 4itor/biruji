@@ -1,0 +1,27 @@
+.console  { text-align: left;
+            font-family: Fira Code, monospace;
+            font-size: 28px;
+            text-decoration: none;
+            display: block;
+            unicode-bidi: embed;
+            white-space: pre;
+            width: 960px;
+            height: 400px;
+            overflow: auto;
+            margin: auto;
+            position: absolute;
+            top: 0pt; left: 0pt; bottom: 0pt; right: 0pt;
+            display: inline-block; }
+body      { background-color: #000000;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgb(255,255,255);
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: url('img/dark_universe.png'); }
+a         { text-decoration:  none;
+            padding: 2px 2px;
+            background: #2020F080; color: #FFFFFF; }
+a:visited { background: #2020F080; color: #FFFFFF; }
+a:hover   { background: #C8C8FF80; color: #D0D0F0; }
+a:active  { background: #C8C8FF80; color: #000000; }
