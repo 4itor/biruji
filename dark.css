@@ -27,8 +27,8 @@ body      { background-color: #202020;
 a         { text-decoration:  none;
             padding: 2px 2px;
             border-radius: 4px;
-            background: #151515; color: #f0b857; }
-a:visited { background: #151515; color: #f0b857; }
+            background: #202020; color: #f0b857; }
+a:visited { background: #202020; color: #f0b857; }
 a:hover   { background: #f0b857; color: #202020; }
 a:active  { background: #f5d8a5; color: #202020; }
 
