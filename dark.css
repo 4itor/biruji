@@ -12,16 +12,44 @@
             position: absolute;
             top: 0pt; left: 0pt; bottom: 0pt; right: 0pt;
             display: inline-block; }
-body      { background-color: #000000;
-            color: #ffffff;
-            text-shadow: 0 0 10px rgb(255,255,255);
+
+body      { background-color: #202020;
+            color: #f0b857;
             text-align: center;
             margin-left: auto;
             margin-right: auto;
-            background-image: url('img/dark_universe.png'); }
+            overflow: hidden;
+            animation-duration: 0.01s;
+            animation-name: textflicker;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; }
+
 a         { text-decoration:  none;
             padding: 2px 2px;
-            background: #2020F080; color: #FFFFFF; }
-a:visited { background: #2020F080; color: #FFFFFF; }
-a:hover   { background: #C8C8FF80; color: #D0D0F0; }
-a:active  { background: #C8C8FF80; color: #000000; }
+            border-radius: 4px; }
+a:visited { background: #151515; color: #f0b857; }
+a:hover   { background: #f0b857; color: #202020; }
+a:active  { background: #f5d8a5; color: #202020; }
+
+.scanline { width: 100%;
+            height: 100px;
+            z-index: 8;
+            background: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0) 0%,
+                rgba(255, 255, 255, 0.2) 10%,
+                rgba(0, 0, 0, 0.1) 100% );
+            opacity: 0.1;
+            position: absolute;
+            bottom: 100%;
+            pointer-events: none;
+            animation: scanline 10s linear infinite; }
+
+@keyframes textflicker {
+    from { text-shadow: 1px 0     0   #ea36af, -2px  0     0   #75fa69; }
+    to   { text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69; } }
+
+@keyframes scanline {
+    0%   { bottom: 100%; }
+    80%  { bottom: 100%; }
+    100% { bottom: -20%; } }
