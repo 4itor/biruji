@@ -59,7 +59,7 @@ a:active  { background: #f5d8a5; color: #202020; }
             pointer-events: none;
             animation: scanline 10s linear infinite; }
 
-.blinking { animation: blink 1s step-end infinite; }
+.cursor   { animation: blink-underline 1s step-end infinite; }
 
 @keyframes textflicker {
     from { text-shadow: 1px 0     0   #ea36af, -2px  0     0   #75fa69; }
@@ -70,6 +70,6 @@ a:active  { background: #f5d8a5; color: #202020; }
     80%  { bottom: 100%; }
     100% { bottom: -20%; } }
 
-@keyframes blink {
+@keyframes blink-underline {
     from, to { text-decoration: underline; }
     50%      { text-decoration: none; } }
